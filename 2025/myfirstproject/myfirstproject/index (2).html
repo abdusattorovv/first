@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnig Tags and Forms</title>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div>
+            <p>Name:</p>
+            <input type="text" name="name" placeholder="Enter your name" required>
+        </div>
+        <div>
+            <p>Password:</p>
+            <input type="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div>
+            <p>Email:</p>
+            <input type="email" name="email" placeholder="Enter your email" >
+        </div>
+        <div>
+            <p>Phone Number:</p>
+            <input type="tel" name="phone" placeholder="Enter your phone number" >
+        </div>
+        <div>
+            <p>Upload File:</p>
+            <input type="file" name="file" accept=".jpg, .png, .pdf">
+        </div>
+        <div>
+            <p>Comments:</p>
+            <textarea name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+        </div>
+        <div>
+            <p>Choose your Gender</p>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <p>Information about yourself</p>
+            <div>
+                <input checked type="checkbox" name="interests" id="coding" value="coding">
+                <label for="coding">Coding</label> <!-- checkbox - foydalanuvchi tanlovi -->
+                <input type="checkbox" name="interests" id="reading" value="reading">
+                <label for="reading">Reading</label> 
+                <input  disabled type="checkbox" name="interests" id="traveling" value="traveling">
+                <label for="traveling">Traveling</label>
+            </div>
+        </div>
+        <div>
+            <p>Choose a color:</p>
+            <input type="color" name="color" value="#ff0000"> <!-- color - rang tanlash -->
+        </div>
+        <div>
+            <p>Select a date:</p>
+            <input type="date" name="date"> <!-- date - sana tanlash -->
+        </div>
+        <div>
+            <p>Select a time:</p>
+            <input type="time" name="time"> <!-- time - vaqt tanlash -->
+        </div>
+        <div>
+            <p>Select a range:</p>
+            <input type="range" name="range" min="1" max="100" value="50"> <!-- range - diapazon tanlash -->
+        </div>
+        <div>
+            <p>Select an option:</p>
+            <select name="options">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+        </div>
+        <div>
+            <p>Other Information</p>
+            <div>
+                <textarea name="info" cols="30" rows="15"></textarea>
+            </div>
+        </div>
+        <div>
+            <p>Favourite Color</p>
+            <div>
+                <input type="checkbox" name="colorChoice" id="red" value="red">
+                <label for="red">Red</label>
+                <input type="checkbox" name="colorChoice" id="green" value="green">
+                <label for="green">Green</label>
+                <input type="checkbox" name="colorChoice" id="blue" value="blue">
+                <label for="blue">Blue</label>
+            </div>
+        </div>
+        <div>
+            <p>Subscribe to Newsletter</p>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+            <label for="subscribe">Yes, I want to subscribe</label>
+        </div>
+        <div>
+            <button type="submit">Submit</button> <!-- submit - formani yuborish -->
+            <button type="reset">Reset</button> <!-- reset - formani tozalash -->
+    </form>
+    
+</body>
+</html>

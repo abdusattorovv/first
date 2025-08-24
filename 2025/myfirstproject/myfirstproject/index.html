@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .styled-table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com/" target="_blank">  Google</a>
+    <!-- qoralama saytda korindmaydi ammo code yozganda korinib turadi -->
+     
+    <table> <!--table tuzish -->
+        <thead> <!-- bosh qismi-->
+            <tr> <!--ustunlar-->
+                <th>Name</th>  <!-- ustunni ichiga yoziladigan nomlar (ajratib korsatadi)-->
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead> <!-- thead yopiluvchi tag-->
+        <tbody> <!-- tana qismi-->
+            <tr>
+                <td>James</td> <!-- body qismdagi ustunlarni toldirish-->
+                <td>Brown</td>
+                <td>jameslittle22@gmail.com</td>
+                <td>090 2230 1334</td>
+            </tr>
+
+        </tbody> <!--tbody yopildi-->
+    </table>
+    <p>Grocery list</p>
+    <ol> <!-- ordered list (raqamlar bilan)-->
+        <li>Meat</li>
+        <li>Vegetables</li>
+        <li>Fruits</li>
+        <li>Milk Products</li>
+     </ol>
+     <p>Car Companies</p>
+    <ul> <!--unordered list-->
+        <li>BMW</li>
+        <li>Mercadec Benz</li>
+        <li>Chevrolet</li>
+        <li>Porsche</li>
+    </ul>
+    <form action="#" method="post" enctype="multipart/form-data"></form>
+    
+   
+    <input type="text" name="Information" placeholder="Account detail" id=""> <!--jadvachani ichiga malumot placeholder-hint-->
+    <!-- input - foydalanuvchi malumot kiritishi uchun ishlatiladi -->
+    <!--disabled - ma'lumot kiritib bo'lmaydi-->
+   
+    <label for="fname"> <!-- fname -jadval oldida chiqadi nima yozish haqida masalan First name -->
+        First Name:
+        <input type="text" id="fname" name="fname" placeholder="Your first name">
+    </label>
+
+   
+    <label for="age"> <!-- label - inputga tegishli yoshni yozish yoki berish uchun ishlatiladi -->
+        Age:
+        <input type="number" id="age" name="age" placeholder="Your age"> <!--faqat raqam ishlatiladi-->
+    
+    
+    </label>  
+    <br>
+    <br>
+    <label for="Password"> <!-- label - inputga tegishli parol berish uchun ishlatiladi -->
+        Password:
+        <input type="password" id="password" name="password" placeholder="Your password">
+
+        <!--password - parol kiritish uchun ishlatiladi-->
+        <br>
+        <label for="Confirm Password"> <!-- label - inputga tegishli parol berish uchun ishlatiladi -->
+            Confirm Password:
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+            <!--password - parol kiritish uchun ishlatiladi-->
+    
+    </label>
+    <label for="Is Married"> <!-- label - inputga tegishli parol berish uchun ishlatiladi -->
+        Are you married? :
+        <input type="checkbox" id="IsMarried" name="Marriage" placeholder="Are you married?"> <br>
+        <!--checkbox - tanlash uchun ishlatiladi-->
+        <br>
+        <br>
+        Are you single? :
+        <input type="checkbox" id="IsSingle" name="Marriage" placeholder="Are you single?"> <br>
+        <!--checkbox - tanlash uchun ishlatiladi-->
+
+
+        <div>
+            <p><input checked type="checkbox" name="car" value="yes"> Car №1</p>
+            <p><input type="checkbox" name="car2" value="yes"> Car №2</p>
+            <p><input type="checkbox" name="car3" value="yes"> Car №3</p>
+            <p><input type="checkbox" name="car4" value="yes"> Car №4</p>
+        </div>
+
+        <div>
+            <p><input type="file" name="foto" id=""></p>
+        </div>
+
+
+    </label>
+    <br>
+    <label for="Gender"> <!-- label - inputga tegishli parol berish uchun ishlatiladi -->
+        Gender:
+        <input type="radio" id="IsMarried" name="Marriage" placeholder="Are you married?"> 
+        <!--checkbox - tanlash uchun ishlatiladi-->
+        <input type="radio" id="IsMarried" name="Marriage" placeholder="Are you married?">
+    </label>
+    <br>
+   
+   
+    <label for="Country">   
+        Where are you from?
+      
+      
+        <select id="Country" name="Country"> <!--select - tanlash uchun ishlatiladi-->
+            <option value="Uzb">Uzbekistan</option>
+            <option value="Rus">Russia</option>
+            <option value="USA">USA</option>
+            <option value="Ger">Germany</option>
+        </select>
+
+        <br>
+
+    <textarea name="area for texts" cols="30S" rows="20"></textarea>
+    <!-- textarea - matn kiritish uchun ishlatiladi -->
+    <!-- cols - attribute -->
+    <!-- rows - attribute -->
+        
+    </body>
+</html>
